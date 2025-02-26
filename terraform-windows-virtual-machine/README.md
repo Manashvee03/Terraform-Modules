@@ -15,6 +15,7 @@ Before using this module, ensure you have:
 - Terraform installed (`>=1.0`)
 - An **Azure subscription** with required permissions
 - A **Resource Group** created in Azure
+- A **Virtual Network with Subnet** created in Azure
 
 ## Usage
 ### 1. Initialize Terraform
