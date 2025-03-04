@@ -42,3 +42,15 @@ variable "service_endpoints" {
   description = "A list of service endpoints to associate with the subnet (e.g., ['Microsoft.Storage', 'Microsoft.Sql'])."
   default     = []
 }
+
+variable "subnet_delegations" {
+  nullable = true
+  type = any
+  default = {}
+  description = "Object of subnet delegations for the Azure Subnet."
+  # example = {
+  #   subnet_delegation_name  = "Microsoft.Container.Instance"
+  #   service_delegation_name = "Microsoft.ContainerInstance/containerGroups"
+  #   actions                = ["Microsoft.Network/virtualNetworks/subnets/join/action"]
+  # }
+}
